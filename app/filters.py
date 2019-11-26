@@ -18,14 +18,16 @@ class ItemFilter(FilterSet):
         fields=(
             ('name', 'name'),
             ('age', 'age'),
+            
         ),
         field_labels={
             'name': '氏名',
             'age': '年齢',
+            
         },
         label='並び順'
     )
 
     class Meta:
         model = Item
-        fields = ('name', 'sex', 'memo',)
+        fields = ('name', 'sex', 'course', 'year', 'memo',)
