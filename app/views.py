@@ -7,6 +7,7 @@ from django_filters.views import FilterView
 from .filters import ItemFilter
 from .forms import ItemForm
 from .models import Item
+import requests
 
 
 # Create your views here.
